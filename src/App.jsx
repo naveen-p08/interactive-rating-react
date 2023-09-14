@@ -1,5 +1,15 @@
+import "./App.css";
+import Card from "./components/ui/Card";
+import Rating from "./components/Rating";
+
 function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <Card>
+        <Rating />
+      </Card>
+    </>
+  );
 }
 
 export default App;
