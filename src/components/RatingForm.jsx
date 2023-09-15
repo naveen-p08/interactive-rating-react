@@ -1,6 +1,11 @@
+import PropTypes from "prop-types";
 import styles from "./RatingForm.module.css";
 
-function RatingForm() {
+RatingForm.propTypes = {
+  handleClick: PropTypes.func,
+};
+
+function RatingForm({ handleClick }) {
   const length = 5;
   let buttonMap = Array.from({ length: length }, (_, index) => index + 1);
 
@@ -14,6 +19,7 @@ function RatingForm() {
               key={index}
               className={styles.rating_btn}
               aria-label={`${button} stars`}
+              onClick={() => handleClick(button)}
             >
               {button}
             </button>

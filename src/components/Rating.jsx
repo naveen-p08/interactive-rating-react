@@ -1,7 +1,12 @@
 import RatingForm from "./RatingForm";
 import styles from "./Rating.module.css";
+import PropTypes from "prop-types";
 
-function Rating() {
+Rating.propTypes = {
+  handleClick: PropTypes.func,
+};
+
+function Rating({ handleClick }) {
   return (
     <div>
       <div className={styles.starimg_container}>
@@ -12,7 +17,7 @@ function Rating() {
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <RatingForm />
+      <RatingForm handleClick={handleClick} />
     </div>
   );
 }
