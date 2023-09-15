@@ -10,7 +10,6 @@ RatingForm.propTypes = {
 function RatingForm({ handleClick, handleSubmit, rating }) {
   const length = 5;
   let buttonMap = Array.from({ length: length }, (_, index) => index + 1);
-  // const [active, setActive] = useState(undefined);
 
   function submitForm(e) {
     e.preventDefault();

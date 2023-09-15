@@ -5,7 +5,8 @@
 }
 
 .rating_btn {
-  width: 4rem;
+  font-size: 1.25rem;
+  width: 5rem;
   aspect-ratio: 1;
   background-color: var(--bg-star-gray);
   border: none;
@@ -50,4 +51,10 @@
   background-color: var(--clr-white);
   color: var(--clr-orange);
   outline: 1px solid var(--clr-orange);
+}
+
+@media (max-width: 768px) {
+  .rating_btn {
+    width: 4rem;
+  }
 }
