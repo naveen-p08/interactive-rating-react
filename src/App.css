@@ -2,18 +2,18 @@
   --ff-family: "Overpass", sans-serif;
 
   --bg-dark-blue: hsl(216, 12%, 8%);
-  --bg-gradient-top: hsl(212, 19%, 15%);
-  --bg-gradient-bottom: hsl(213, 19%, 18%);
+  --bg-gradient-bottom: hsl(212, 19%, 15%);
+  --bg-gradient-top: hsl(213, 19%, 18%);
   --bg-gradient: linear-gradient(
     to bottom,
     var(--bg-gradient-top),
     var(--bg-gradient-bottom)
   );
-  --bg-star-gray: hsl(205, 19%, 18%);
+  --bg-star-gray: hsl(210, 19%, 18%);
   --clr-white: hsl(0, 0%, 100%);
   --clr-grey: hsl(217, 12%, 63%);
   --bg-grey: hsl(216, 12%, 54%);
-  --bg-orange: hsl(25, 97%, 53%);
+  --clr-orange: hsl(25, 97%, 53%);
 }
 
 *,

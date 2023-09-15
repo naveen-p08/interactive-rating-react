@@ -1,14 +1,29 @@
+import styles from "./RatingForm.module.css";
+
 function RatingForm() {
   const length = 5;
   let buttonMap = Array.from({ length: length }, (_, index) => index + 1);
 
   return (
     <form>
-      {buttonMap.map((button, index) => {
-        return <button key={index}>{button}</button>;
-      })}
+      <div className={styles.btn_container}>
+        {buttonMap.map((button, index) => {
+          return (
+            <button
+              type="button"
+              key={index}
+              className={styles.rating_btn}
+              aria-label={`${button} stars`}
+            >
+              {button}
+            </button>
+          );
+        })}
+      </div>
 
-      <button type={"submit"}>submit</button>
+      <button type={"submit"} className={styles.submit_btn}>
+        submit
+      </button>
     </form>
   );
 }
