@@ -1,6 +1,6 @@
 .card {
   width: 33rem;
-  height: 36rem;
+  /* height: 36rem; */
   background-image: var(--bg-gradient);
   border-radius: 2rem;
   padding: 3rem;
@@ -9,6 +9,6 @@
 @media (min-width: 768px) {
   .card {
     width: 41rem;
-    height: 42rem;
+    /* height: 42rem; */
   }
 }
