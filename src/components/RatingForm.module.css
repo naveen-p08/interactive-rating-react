@@ -26,7 +26,7 @@
   outline: 1px solid var(--clr-orange);
 }
 
-.rating_btn:focus {
+.active {
   background-color: var(--clr-orange);
   color: var(--clr-white);
 }

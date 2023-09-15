@@ -15,7 +15,11 @@ function App() {
         {ratingSubmit ? (
           <ThankYou />
         ) : (
-          <Rating handleClick={setRating} handleSubmit={setRatingSubmit} />
+          <Rating
+            handleClick={setRating}
+            handleSubmit={setRatingSubmit}
+            rating={rating}
+          />
         )}
       </Card>
     </>

@@ -4,11 +4,13 @@ import styles from "./RatingForm.module.css";
 RatingForm.propTypes = {
   handleClick: PropTypes.func,
   handleSubmit: PropTypes.func,
+  rating: PropTypes.number,
 };
 
-function RatingForm({ handleClick, handleSubmit }) {
+function RatingForm({ handleClick, handleSubmit, rating }) {
   const length = 5;
   let buttonMap = Array.from({ length: length }, (_, index) => index + 1);
+  // const [active, setActive] = useState(undefined);
 
   function submitForm(e) {
     e.preventDefault();
@@ -23,9 +25,14 @@ function RatingForm({ handleClick, handleSubmit }) {
             <button
               type="button"
               key={index}
-              className={styles.rating_btn}
+              className={`${styles.rating_btn} ${
+                rating === button ? styles.active : ""
+              }`}
               aria-label={`${button} stars`}
-              onClick={() => handleClick(button)}
+              onClick={() => {
+                handleClick(button);
+                // setActive(button);
+              }}
             >
               {button}
             </button>
