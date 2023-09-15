@@ -4,9 +4,10 @@ import PropTypes from "prop-types";
 
 Rating.propTypes = {
   handleClick: PropTypes.func,
+  handleSubmit: PropTypes.func,
 };
 
-function Rating({ handleClick }) {
+function Rating({ handleClick, handleSubmit }) {
   return (
     <div>
       <div className={styles.starimg_container}>
@@ -17,7 +18,7 @@ function Rating({ handleClick }) {
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <RatingForm handleClick={handleClick} />
+      <RatingForm handleClick={handleClick} handleSubmit={handleSubmit} />
     </div>
   );
 }
