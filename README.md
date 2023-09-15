@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://card-ratings.netlify.app/)
-- Live Site URL: [live site URL here](https://github.com/naveen-p08/interactive-rating-react)
+- Solution URL: [Solution URL here](https://github.com/naveen-p08/interactive-rating-react)
+- Live Site URL: [live site URL here](https://card-ratings.netlify.app/)
 
 ## My process
 
