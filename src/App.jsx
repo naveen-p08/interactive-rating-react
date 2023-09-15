@@ -13,7 +13,7 @@ function App() {
     <>
       <Card>
         {ratingSubmit ? (
-          <ThankYou />
+          <ThankYou rating={rating} />
         ) : (
           <Rating
             handleClick={setRating}
